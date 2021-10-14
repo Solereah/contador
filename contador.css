@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+ background-color:rgb(23, 23, 23);
+}
+
+.counter-container {
+  margin-top: 2rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  user-select: none;
+  font-size: 3rem;
+  color:rgb(234, 234, 234);
+}
+
+.counter{
+  font-size:4rem;
+  color:rgb(234, 234, 234);
+}
+
+.counter-btns {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-btns button {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size:1rem;
+  color:rgb(234, 234, 234);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+#color1{
+  background-color: rgb(21, 4, 133);
+}
+#color2{
+  background-color: rgb(198, 42, 136);
+}
+#color3{
+  background-color: rgb(3, 196, 161);
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .counter-container {
+    height: 300px;
+  }
+
+  .counter-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter-btns > div:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
